@@ -1,5 +1,8 @@
 import React from 'react';
 
+// components
+import Image from '@/components/Image';
+
 // packages
 import { Button, Card, Form, Input, InputNumber } from 'antd';
 import {
@@ -69,12 +72,21 @@ export default function UserCard({ data }: { data: UserCardProps }) {
       {/* card starts here */}
       <Card
         cover={
-          <div className={styles.userImageContainer}>
-            <img
+          <div
+            style={{
+              height: '200px',
+            }}
+            className={styles.userImageContainer}
+          >
+            <Image
+              src='/images/dummy.jpg' // ! [NOTE]: USED DUMMY IMAGE BECAUSE
+              alt='user image' // ! API DOESN'T PROVIDE ANY IMAGE
+            />
+            {/* <img
               alt={data.name}
               src={'/images/dummy.jpg'} // ! [NOTE]: USED DUMMY IMAGE BECAUSE
               className={styles.userImage} // ! API DOESN'T PROVIDE ANY IMAGE
-            />
+            /> */}
           </div>
         }
         actions={[
