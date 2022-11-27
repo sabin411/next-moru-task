@@ -1,0 +1,21 @@
+.userImageContainer {
+  width: 100%;
+  max-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.userImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.descriptionIcon {
+  margin-right: 8px;
+}
+
+.descriptionText {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
